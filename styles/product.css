@@ -9,8 +9,8 @@
 
 .product__item {
     position: relative;
-    width: 120px;
-    aspect-ratio: 1/1.6;
+    width: 150px;
+    aspect-ratio: 1/1;
 
     border-radius: 5px;
 

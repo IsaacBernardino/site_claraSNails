@@ -25,7 +25,7 @@ body {
 }
 
 h2 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     letter-spacing: 1px;
     text-align: center;
 }
@@ -34,6 +34,7 @@ h3 {
     
     font-size: 1.2em;
     letter-spacing: 5px;
+    text-align: center;
 }
 
 #body {
@@ -71,19 +72,23 @@ h3 {
 }
 
 
-.fundoForal {
-    position: absolute;
-    z-index: -10;
-    width: 100vw;
-    height: 200vh;
-
+body {
     background-image: url(../imagens/site_wallpaper/wallpaper.jpg);
     background-size: contain;
     background-repeat: repeat;
     background-attachment: fixed;
-    opacity: 0.22;
 }
 
+.interface {
+    background-color: black;
+    z-index: -1;
+    opacity: 0.75;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .prices, .contato {
     display: flex;
@@ -98,7 +103,6 @@ h3 {
     font-weight: 400;
 }
 
-
 table {
     width: 100%;
 
@@ -110,7 +114,7 @@ table {
 td {
     border-radius: 5px;
     background-color: #7b007b77;
-    padding: 3px 10px;
+    padding: 5px;
 }
 
 #header img{
