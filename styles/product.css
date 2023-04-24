@@ -18,9 +18,25 @@
     flex-direction: column-reverse;
     align-items: flex-end;
 
-    box-shadow: 0 0 25px 10px #7b007b58;
+    box-shadow: 0 0 10px 6px #7b007b3c;
 
-    margin: 1px;
+    margin: 5px;
+} .product__item:active {
+    position: absolute;
+    z-index: 10;
+    width: 300px;
+    aspect-ratio: 1/1.6;
+}.product__item:active::before {
+    content: '';
+    width: 1000vw;
+    height: 1000vw;
+    z-index: -1;
+    position: absolute;
+    background-color: #000000bc;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .product__item__img {

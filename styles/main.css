@@ -1,19 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
-  
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lato:wght@300;400&display=swap');
+
 * {
     box-sizing: border-box;
+    /*  
+    font-family: 'Bad Script', cursive;
+    font-family: 'Lato', sans-serif;
+    */
 }
 
 body {
     background-color: black;
     color: #e0a2a2;
-    font-family: 'Oleo Script', cursive;
+    font-family: 'Bad Script', cursive;
 
     display: flex;
     flex-direction: column;
 
     align-items: center;
+
+    padding: 0;
+    margin: 0;
+
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 1.6em;
+    letter-spacing: 1px;
+}
+
+h3 {
+    
+    font-size: 1.2em;
+    letter-spacing: 5px;
 }
 
 #body {
@@ -24,6 +43,45 @@ body {
     justify-content: center;
 }
 
+#divisoria {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#divisoria_1, #divisoria_2, #divisoria_3 {
+    height: 1px;
+    background-color: #ff00ffa1;
+    margin: 2px 0;
+}
+
+#divisoria_1 {
+    width: 80%;
+}
+#divisoria_2 {
+    width: 60%;
+}
+#divisoria_3 {
+    width: 30%;
+}
+
+
+.fundoForal {
+    position: absolute;
+    z-index: -10;
+    width: 100vw;
+    height: 200vh;
+
+    background-image: url(../imagens/site_wallpaper/wallpaper.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    opacity: 0.22;
+}
+
+
 .prices, .contato {
     display: flex;
     flex-direction: column;
@@ -33,15 +91,32 @@ body {
     width: 50%;
 }
 
+.price__value {
+    font-weight: 400;
+}
+
 
 table {
     width: 100%;
 
     font-size: 14pt;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 td {
     border-radius: 5px;
-    background-color: #7b007b35;
+    background-color: #7b007b77;
     padding: 3px 10px;
+}
+
+#header img{
+    width: 256px;
+    image-rendering: optimizeQuality;
+}
+
+#footer {
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 50px 0 0 10px;
 }
