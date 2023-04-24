@@ -25,13 +25,14 @@ body {
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: 1.6em;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 h3 {
     
-    font-size: 1em;
+    font-size: 1.2em;
     letter-spacing: 5px;
 }
 
