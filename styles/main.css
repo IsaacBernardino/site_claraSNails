@@ -25,13 +25,13 @@ body {
 }
 
 h2 {
-    font-size: 1.6em;
+    font-size: 1.4em;
     letter-spacing: 1px;
 }
 
 h3 {
     
-    font-size: 1.2em;
+    font-size: 1em;
     letter-spacing: 5px;
 }
 
@@ -41,6 +41,8 @@ h3 {
 
     align-items: center;
     justify-content: center;
+
+    padding: 2px;
 }
 
 #divisoria {
@@ -88,7 +90,7 @@ h3 {
     justify-content: center;
     align-items: center;
 
-    width: 50%;
+    width: 60%;
 }
 
 .price__value {
