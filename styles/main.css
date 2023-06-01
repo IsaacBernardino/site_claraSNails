@@ -1,17 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lato:wght@300;400&display=swap');
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/ubuntu/Ubuntu-Regular.ttf);
+    font-weight: 400;
+
+    font-family: ubuntu;
+    src: url(../fonts/ubuntu/Ubuntu-Light.ttf);
+    font-weight: 200;
+}
 
 * {
     box-sizing: border-box;
-    /*  
-    font-family: 'Bad Script', cursive;
-    font-family: 'Lato', sans-serif;
-    */
 }
 
 body {
-    background-color: black;
-    color: #e0a2a2;
-    font-family: 'Bad Script', cursive;
+    background-image: url(../imagens/site_wallpaper/wallpaper.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: repeat-y;
+
+    color: #f0acac;
+    font-family: Ubuntu;
 
     display: flex;
     flex-direction: column;
@@ -31,99 +39,122 @@ h2 {
 }
 
 h3 {
-    
     font-size: 1.2em;
     letter-spacing: 5px;
     text-align: center;
 }
 
-#body {
-    display: flex;
-    flex-direction: column;
+#back_black_screen {
+    position: fixed;
+    width: 200%;
+    height: 200%;
 
-    align-items: center;
-    justify-content: center;
+    rotate: -45deg;
 
-    padding: 2px;
-}
+    filter: blur(100px);
 
-#divisoria {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#divisoria_1, #divisoria_2, #divisoria_3 {
-    height: 1px;
-    background-color: #ff00ffa1;
-    margin: 2px 0;
-}
-
-#divisoria_1 {
-    width: 80%;
-}
-#divisoria_2 {
-    width: 60%;
-}
-#divisoria_3 {
-    width: 30%;
-}
-
-
-body {
-    background-image: url(../imagens/site_wallpaper/wallpaper.jpg);
-    background-size: contain;
-    background-repeat: repeat;
-    background-attachment: fixed;
-}
-
-.interface {
-    background-color: black;
+    background-color: #000000aa;
     z-index: -1;
-    opacity: 0.75;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.prices, .contato {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 60%;
+div.interface {
+    width: 100vw;
+    height: 100vh;
 }
 
-.price__value {
-    font-weight: 400;
-}
-
-table {
+div.header {
     width: 100%;
 
-    font-size: 14pt;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 20px;
 }
 
-td {
+div.header span#right {
+    align-self: flex-end;
+}
+
+img#logo_image {
+    width: 200px;
+}
+
+div.content {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#presentation {
+
+    width: 100%;
+    text-align: center;
+
+    font-size: 16pt;
+    font-weight: bolder;
+
+    padding-right: 25px;
+}
+
+div.header .social {
+    width: 100vw;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+div.header .social div{
+    position: relative;
+    background-color: #fffafa;
+    border: 0;
+
+    width: 120px;
+    height: 32px;
+
     border-radius: 5px;
-    background-color: #7b007b77;
-    padding: 5px;
+
+    margin: 5px 10px 0 10px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 9pt;
+    font-weight: 200;
 }
 
-#header img{
-    width: 256px;
-    image-rendering: optimizeQuality;
+/* logo */
+#instagram, #whatsapp {
+    width: 18px;
+    aspect-ratio: 1;
+
+    background-size: cover;
 }
 
-#footer {
-    font-family: Arial, Helvetica, sans-serif;
+#instagram {
+    background-image: url('../imagens/icons/instagram-32.png');
+}
 
-    margin: 50px 0 0 10px;
+#whatsapp {
+    background-image: url('../imagens/icons/whatsapp-32.png');
+}
+
+@media screen and (max-width: 600px) {
+    div.interface {
+        height: 140vh;
+    }
+ 
+    #back_black_screen {
+        height: 100%;
+    }
+
+    #presentation {
+        font-size: 12pt;
+        padding-right: 10px;
+    }
 }
