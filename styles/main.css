@@ -32,6 +32,11 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 h2 {
     font-size: 1.5em;
     letter-spacing: 1px;
@@ -42,6 +47,16 @@ h3 {
     font-size: 1.2em;
     letter-spacing: 5px;
     text-align: center;
+}
+
+.bg-blur {
+    width: 100%;
+    height: 100%;
+    background-color: #ad525ddd;
+
+    position: absolute;
+    z-index: -1;
+    filter: blur(120px);
 }
 
 #back_black_screen {
@@ -90,14 +105,15 @@ div.content {
 }
 
 #presentation {
-
+    color: #fff;
     width: 100%;
-    text-align: center;
+    text-align: right;
 
-    font-size: 16pt;
+    font-size: 15pt !important;
     font-weight: bolder;
+    letter-spacing: 5px;
 
-    padding-right: 25px;
+    padding-right: 25px;;
 }
 
 div.header .social {
@@ -113,7 +129,7 @@ div.header .social div{
     background-color: #fffafa;
     border: 0;
 
-    width: 120px;
+    width: 100px;
     height: 32px;
 
     border-radius: 5px;
@@ -124,10 +140,17 @@ div.header .social div{
     justify-content: space-around;
     align-items: center;
 
-    font-size: 9pt;
-    font-weight: 200;
+    font-size: 8pt;
+    font-weight: 100;
 }
 
+footer {
+    color: #fff !important;
+    text-align: center;
+    font-size: 12px;
+
+    margin-top: 10px;
+}
 /* logo */
 #instagram, #whatsapp {
     width: 18px;

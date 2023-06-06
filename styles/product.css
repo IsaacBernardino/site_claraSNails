@@ -9,7 +9,7 @@
 .product__item {
     position: relative;
     width: 15vw;
-    height: 65vh;
+    height: 60vh;
 
     transform: rotate(4deg);
 
@@ -38,5 +38,11 @@
     .product__item {
         width: 48vw;
         height: 300px;
+        transform: rotate(0);
+    }
+
+    .product__item__img:hover {
+        scale: 1.4;
+        rotate: 25deg;
     }
 }
